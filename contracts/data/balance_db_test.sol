@@ -10,7 +10,7 @@ contract DSBalanceDB_Test is DSBalanceDBEvents, Test {
         db = new DSBalanceDB();
         bob = address(0xbab);
     }
-    function testAddBalance() tests("addBalance") {
+    function testHooplah() tests("addBalance") {
         expectEventsExact(db);
         BalanceUpdate(me, 100);
 
@@ -36,7 +36,7 @@ contract DSBalanceDB_Test is DSBalanceDBEvents, Test {
         db.addBalance(bob, 4);
         db.addBalance(bob, 1);
     }
-    function testMoveBalance() {
+    function testHaaplah() {
         expectEventsExact(db);
         BalanceUpdate(bob, 100);
         BalanceUpdate(bob, 60);
